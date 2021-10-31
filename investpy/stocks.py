@@ -1446,7 +1446,7 @@ def get_stocks_overview(country, as_json=False, n_results=100):
             "ERR#0089: n_results argument should be an integer between 1 and 1000."
         )
 
-    if 1 > n_results or n_results > 1000:
+    if 1 > n_results or n_results > 100000:
         raise ValueError(
             "ERR#0089: n_results argument should be an integer between 1 and 1000."
         )
